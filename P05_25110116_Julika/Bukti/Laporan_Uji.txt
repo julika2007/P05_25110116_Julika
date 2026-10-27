@@ -1,0 +1,16 @@
+LAPORAN UJI - Praktikum P05
+Nama : ...
+NIM  : ...
+
+U1  | PRIMARY KEY kode_barang   | Ditolak #1062        | Hasil aktual: #1062 | Status: Lulus
+U2  | UNIQUE nama_kategori      | Ditolak #1062        | Hasil aktual: #1062 | Status: Lulus
+U3  | FOREIGN KEY id_kategori   | Ditolak #1452        | Hasil aktual: #1452 | Status: Lulus
+U4  | CHECK jumlah_tersedia     | Ditolak #4025/#3819  | Hasil aktual: #4025 | Status: Lulus
+U5  | NOT NULL nama_barang      | Ditolak #1048        | Hasil aktual: #1048 | Status: Lulus
+U6  | RESTRICT hapus barang     | Ditolak #1451        | Hasil aktual: #1451 | Status: Lulus
+U7  | RESTRICT hapus kategori   | Ditolak #1451        | Hasil aktual: #1451 | Status: Lulus
+U8  | CHECK tanggal kembali     | Ditolak #4025/#3819  | Hasil aktual: #4025 | Status: Lulus
+U9  | CHECK jumlah > 0          | Ditolak #4025/#3819  | Hasil aktual: #4025 | Status: Lulus
+U10 | UNIQUE gabungan detail    | Ditolak #1062        | Hasil aktual: #1062 | Status: Lulus
+U11 | CASCADE hapus transaksi   | Berhasil, sisa = 0   | Hasil aktual: 0 | Status: Lulus
+16.8| CHECK di database cek     | Ditolak #4025/#3819  | Hasil aktual: #4025 | Status: Lulus
